@@ -1,0 +1,27 @@
+1 - Qu'est ce qu'une liste en Python : 
+	C'est une structure de données flexible permettant de stocker des valeurs de types différents de façon ordonnées.
+
+2 - Lister les fonctions utiles pour manipuler les listes :
+	list.[]
+	- append(x) : ajout d'un objet "x" à la fin de la liste
+	- extend(iterable) : 
+	- insert(i, x) : ajoute un objet "x" à la position "i" de la liste
+	- remove(x) : supprime le 1er objet de la liste ayant la valeur "x"
+	- pop(i) : supprime l'objet à la position "i"
+	- clear() : supprime tout les objets de la list
+	- index(x[, start, end]) : retourn le premier emplacement de l'objet "x" dans la liste
+	- count(x) : renvoi le nombre de fois l'objet "x" est dans la list
+	- sort() : classe la liste
+	- reverse() : inverse l'ordre de la liste
+	- copy() : retourne une 'shallow' copie de la liste 
+
+3 - Comment parcourir une liste :
+	Pour parcourir une liste on peut utiliser différentes méthode comme :
+		- les boucles for, while
+		- la methode range()
+
+4 - Explorer les listes de compréhension
+	simplification du code pour filtrer une liste : [function(item) for item in list if condition(item)]
+
+5 List vs Tuples
+	Tuples : non modifiable => on peut la parcourir mais rien retirer ou enlever
