@@ -93,13 +93,15 @@ print("\n");
 #Ordered Working List
 Careers = ["Streamer", "Progammer", "Truck driver", "Teacher", "Engineer"];
 Careers_sort = sorted(Careers);
+Careers_rev_sort = sorted(Careers, reverse=True);
+Careers_rev = reversed(Careers);
 
 print("Liste dans l'ordre original :");
 for index1 in Careers:
     print (index1);
 print("\n");
 
-print("Liste dans l'ordre alphabetique :")
+print("Liste dans l'ordre alphabétique :")
 for index2 in Careers_sort:
     print(index2);
 print("\n");    
@@ -108,6 +110,36 @@ print("Liste dans l'ordre original :");
 for index1 in Careers:
     print (index1);
 print("\n");
+
+print("Liste dans l'ordre alphabétique inversé")
+for index3 in Careers_rev_sort:
+    print(index3);
+print("\n");
+
+print("Liste dans l'ordre original :");
+for index1 in Careers:
+    print (index1);
+print("\n");
+
+print("Liste inversée :");
+for index4 in Careers_rev:
+    print(index4);
+print("\n");
+
+print("Liste dans l'ordre original :");
+for index1 in Careers:
+    print (index1);
+print("\n");
+
+print("Liste dans l'ordre alphabétique de façon permanante")
+Careers.sort();
+for index5 in Careers:
+    print(index5);
+print("\n");
+
+print("Liste dans l'ordre alphabétique inversé de façon permanante")
+Careers
+
 
 # print("\n");
 # #Ordered Numbers
