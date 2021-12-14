@@ -1,49 +1,49 @@
 #First List
-langs = ["python", "c", "java"];
+Langs = ["python", "c", "java"];
 
-lang =langs[0];
+lang =Langs[0];
 print(lang.title());
-lang=langs[1];
+lang=Langs[1];
 print(lang.title());
-lang=langs[2];
+lang=Langs[2];
 print(lang.title());
-
 print("\n")
+
 #First Neat List
-langs = ["python", "c", "java"];
+Langs = ["python", "c", "java"];
 
-print("A nice programming language is " + langs[0].title());
-print("A nice programming language is " + langs[1].title());
-print("A nice programming language is " + langs[2].title());
-
+print("A nice programming language is " + Langs[0].title());
+print("A nice programming language is " + Langs[1].title());
+print("A nice programming language is " + Langs[2].title());
 print("\n")
+
 #Your First list
 shop_list = ["lessive vaisselle","lessive linge", "shampooing", "café", "petit dèj"];
 
 print("One item in my shopping list is : " + shop_list[2]);
-
 print("\n")
+
 #First List - Loop
-langs = ["python", "c", "java"];
+Langs = ["python", "c", "java"];
 
-for lang in langs:
-    print(lang.title());
-    
+for lang in Langs:
+    print(lang.title());    
 print("\n")
+
 #First Neat List - Loop
-langs = ["python", "c", "java"];
+Langs = ["python", "c", "java"];
 
-for lang in langs:
-    print("A nice programming language is " + lang.title() + ".");
-    
+for lang in Langs:
+    print("A nice programming language is " + lang.title() + ".");    
 print("\n")
+
 #Your First List - Loop
 shop_list = ["lessive vaisselle","lessive linge", "shampooing", "café", "petit dèj"];
 
 for shop_item in shop_list :
     print("In my shopping list I have : " + shop_item);
-    
 print("\n")
+
 #Working List
 Careers = ["Streamer", "Progammer", "Truck driver", "Teacher", "Engineer"];
 index = Careers.index("Teacher");
@@ -60,8 +60,8 @@ print(Careers);
 
 for index in Careers:
     print(index);
-    
 print("\n")
+
 #Starting From Empty
 Careers = []
 print(Careers);
@@ -88,8 +88,8 @@ Careers.append("Mason");
 print(Careers);
 
 print("My first career choice was : " + Careers[0] + " and my last career choice was : " + Careers[3] + "." )
-
 print("\n");
+
 #Ordered Working List
 Careers = ["Streamer", "Progammer", "Truck driver", "Teacher", "Engineer"];
 Careers_sort = sorted(Careers);
@@ -138,27 +138,68 @@ for index5 in Careers:
 print("\n");
 
 print("Liste dans l'ordre alphabétique inversé de façon permanante")
-Careers
+Careers.sort(reverse=True);
+for index6 in Careers:
+    print(index6);
+print("\n");
 
+#Ordered Numbers
+Nums = [1, 8, 6, 7, 3];
+Nums_inc = sorted(Nums);
+Nums_dec = sorted(Nums, reverse=True);
+Nums_rev = reversed(Nums);
 
-# print("\n");
-# #Ordered Numbers
-# Nums = [1, 8, 6, 7, 3];
-# Nums_sort = sorted(Nums);
+print("Print the numbers in the original order :");
+for Num1 in Nums:
+    print(Num1)
+print("\n");
 
-# for Num1 in Nums:
-#     print(Num1)
-    
-# print("\n");
+print("Print the numbers in increasing order :");
+for Num2 in Nums_inc:
+    print(Num2);
+print("\n");    
 
-# for Num2 in Nums_sort:
-#     print(Num2);
+print("Print the numbers in the original order :");
+for Num1 in Nums:
+    print(Num1)
+print("\n");
 
-# print("\n");    
+print("Print the numbers in decreasing order :");
+for Num3 in Nums_dec:
+    print(Num3);
+print("\n");
 
-# for Num1 in Nums:
-#     print(Num1)
-    
-# print("\n");
+print("Print the numbers in the original order :");
+for Num1 in Nums:
+    print(Num1)
+print("\n");
 
+print("Print the numbers in the reverse order from how they started :")
+for Num4 in Nums_rev:
+    print(Num4);
+print("\n");
+
+print("Print the numbers in the original order :");
+for Num1 in Nums:
+    print(Num1)
+print("\n");
+
+print("Permanently sort the numbers in increasing order, and then print them out :")
+Nums.sort();
+for Num5 in Nums:
+    print(Num5);
+print("\n");
+
+print("Permanently sort the numbers in descreasing order, and then print them out.")
+Nums.sort(reverse=True);
+for Num6 in Nums:
+    print(Num6);
+print("\n");
+
+#List Lengths
+Careers_count = len(Careers);
+Langs_count = len(Langs);
+
+print("My Career list as %s different jobs in it and my programming language list as %s different languages in it." %(str(Careers_count), str(Langs_count)))
+print("\n");
 
