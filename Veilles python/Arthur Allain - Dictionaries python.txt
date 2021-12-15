@@ -11,7 +11,4 @@
 4 - pour parcourir un dictionnaire on utilise une boucle 'for':
 	for clef, valeur in Dictionnaire.items() :	pour l'intégralité du dictionnaire
 	for clef in Dictionnaire :			pour parcourir les clefs
-	for valeur in Dictionnaire.value() : 		pour parcourir les valeurs
-
-à ces méthodes on peut ajouter des arguments comment 'sorted()' pour parcourir le dictionnaire dans un ordre spécifique :
-	for clef in sorted(Dictionnaire)
+	for valeur in Dictionnaire.value() : 		pour parcourir les valeurs**ui

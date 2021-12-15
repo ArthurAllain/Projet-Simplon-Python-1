@@ -1,3 +1,4 @@
+#%%
 #First List
 Langs = ["python", "c", "java"];
 
@@ -7,43 +8,42 @@ lang=Langs[1];
 print(lang.title());
 lang=Langs[2];
 print(lang.title());
-print("\n")
 
+#%%
 #First Neat List
 Langs = ["python", "c", "java"];
 
 print("A nice programming language is " + Langs[0].title());
 print("A nice programming language is " + Langs[1].title());
 print("A nice programming language is " + Langs[2].title());
-print("\n")
 
+#%%
 #Your First list
 shop_list = ["lessive vaisselle","lessive linge", "shampooing", "café", "petit dèj"];
 
 print("One item in my shopping list is : " + shop_list[2]);
-print("\n")
 
+#%%
 #First List - Loop
 Langs = ["python", "c", "java"];
 
 for lang in Langs:
     print(lang.title());    
-print("\n")
-
+#%%
 #First Neat List - Loop
 Langs = ["python", "c", "java"];
 
 for lang in Langs:
-    print("A nice programming language is " + lang.title() + ".");    
-print("\n")
+    print("A nice programming language is " + lang.title() + "."); 
 
+#%%
 #Your First List - Loop
 shop_list = ["lessive vaisselle","lessive linge", "shampooing", "café", "petit dèj"];
 
 for shop_item in shop_list :
     print("In my shopping list I have : " + shop_item);
-print("\n")
 
+#%%
 #Working List
 Careers = ["Streamer", "Progammer", "Truck driver", "Teacher", "Engineer"];
 index = Careers.index("Teacher");
@@ -60,8 +60,8 @@ print(Careers);
 
 for index in Careers:
     print(index);
-print("\n")
 
+#%%
 #Starting From Empty
 Careers = []
 print(Careers);
@@ -88,8 +88,8 @@ Careers.append("Mason");
 print(Careers);
 
 print("My first career choice was : " + Careers[0] + " and my last career choice was : " + Careers[3] + "." )
-print("\n");
 
+#%%
 #Ordered Working List
 Careers = ["Streamer", "Progammer", "Truck driver", "Teacher", "Engineer"];
 Careers_sort = sorted(Careers);
@@ -141,8 +141,8 @@ print("Liste dans l'ordre alphabétique inversé de façon permanante")
 Careers.sort(reverse=True);
 for index6 in Careers:
     print(index6);
-print("\n");
 
+#%%
 #Ordered Numbers
 Nums = [1, 8, 6, 7, 3];
 Nums_inc = sorted(Nums);
@@ -193,19 +193,81 @@ print("\n");
 print("Permanently sort the numbers in descreasing order, and then print them out.")
 Nums.sort(reverse=True);
 for Num6 in Nums:
-    print(Num6);
-print("\n");
 
+#%%
 #List Lengths
 Careers_count = len(Careers);
 Langs_count = len(Langs);
 
 print("My Career list as %s different jobs in it and my programming language list as %s different languages in it." %(str(Careers_count), str(Langs_count)))
-print("\n");
 
+#%%
 #Alphabet Slices
 Alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
 First_alpha = Alpha[:3]
 Middle_alpha = Alpha[3:6]
-End_alpha = __uii
+End_alpha = Alpha[7:]
 
+for letter1 in First_alpha:
+    print(letter1);
+print("\n");
+for letter2 in Middle_alpha:
+    print(letter2);
+print("\n");
+for letter3 in End_alpha:
+    print(letter3);
+
+#%%
+#Protected List
+Names = ["Arthur", "Vincent", "Martin"]
+Names_copie = Names[:3];
+
+Names.insert(2, "Ulysse");
+Names.append("Joseph");
+
+print("This is the original list :");
+for name1 in Names:
+    print(name1);
+print("\n");
+print("This is the copie made from a slice")
+for name2 in Names_copie:
+    print(name2);
+
+#%%
+#First Twenty
+for Numbers in range(1,21):
+    print(Numbers);
+
+#%%
+#Larger Sets
+for Numbers2 in range(1, 1000001):
+    print(Numbers2);
+
+#%%
+#Five Wallets
+Wallets = [654, 89710, 367180, 16485, 24768]
+Max_Wallet = max(Wallets);
+Min_Wallet = min(Wallets);
+Sum_Wallet = sum(Wallets);
+
+print("The fattest wallet has " + str(Max_Wallet) + " in it.");
+print("The skinniest wallet has %s in it" %Min_Wallet);
+print("All together, these wallets have %d in it" %Sum_Wallet);
+
+#%%
+#Multiple of Ten
+
+Multi = [number*10 for number in range(1,11)];
+
+for numb in Multi:
+    print(numb);
+
+#%%
+#Cubes
+Cubes = [cube**3 for cube in range(1,11)];
+
+for cube in Cubes:
+    print(cube);
+    
+#%%
+#Awesomeness
