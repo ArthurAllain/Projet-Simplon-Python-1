@@ -1,0 +1,17 @@
+1 - façon de stockes des informations de façon connectées au moins deux par deux
+
+2 - Nom du Dictionnaire = {clef1 :valeur1, ...}
+
+3 - 	Add d'un nouveau duo clef + valeur : 	Nom du Dictionnaire["clef"] = "Valeur"
+	Modif d'un duo clef + valeur : 		Nom du Dictionnaire["clef"] = "Nouvelle valeur"
+	Suppr d'un duo clef + valeur : 		del Nom du Dictionnaire["clef"]
+	Modif d'une clef : 			Nom du Dictionnaire["clef"] = Nom du Dictionnaire["clef2"]
+						del Nom du Dictionnaire["clef"]
+
+4 - pour parcourir un dictionnaire on utilise une boucle 'for':
+	for clef, valeur in Dictionnaire.items() :	pour l'intégralité du dictionnaire
+	for clef in Dictionnaire :			pour parcourir les clefs
+	for valeur in Dictionnaire.value() : 		pour parcourir les valeurs
+
+à ces méthodes on peut ajouter des arguments comment 'sorted()' pour parcourir le dictionnaire dans un ordre spécifique :
+	for clef in sorted(Dictionnaire)

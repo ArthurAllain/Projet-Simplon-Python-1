@@ -203,3 +203,9 @@ Langs_count = len(Langs);
 print("My Career list as %s different jobs in it and my programming language list as %s different languages in it." %(str(Careers_count), str(Langs_count)))
 print("\n");
 
+#Alphabet Slices
+Alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+First_alpha = Alpha[:3]
+Middle_alpha = Alpha[3:6]
+End_alpha = __uii
+
